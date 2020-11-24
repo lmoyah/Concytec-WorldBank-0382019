@@ -1,335 +1,171 @@
-@import
-url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luis Moya</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
 
-*{
-	box-sizing: border-box;
-	transition: all ease-in-out 250ms;
-}
+<body>
+<header>
+<img src="img/Lettering-PROYECTO.png" alt="Creative inc. Logo" class= "logo" width="150" height="auto">
+<!--  <h1> Luis Moya  </h1> -->
+<nav>
+	<ul>
+		<li><a href="">Home</a> </li>
+		<li><a href="">About</a> </li>
+		<li><a href="">Contact</a> </li>
+	</ul>
+</nav>
+</header>
 
-body {
-	margin: 0;
-	font-family: 'Raleway', sans-serif;
-	text-align: center;
-}
+<section class="home-hero">
+	<div class="container">
+<h1 class="title">Fusión de Algoritmos de Machine Learning y Tecnologias de Observación de la Tierra para la Mitigación de Desastres<span>Financiado por el Proyecto
+Concytec - Banco Mundial “Mejoramiento y Ampliación de los
+Servicios del Sistema Nacional de Ciencia Tecnología e Innovación
+Tecnológica” 8682-PE, a través de su unidad ejecutora Fondecyt<span></h1>
+<a href="" class="button button-accent">see our work</a>
+	</div>
+</section>
 
-img{
-	max-width: 100%;
-	height: auto;
-}
-
-.container {
-	width: 95%;
-	max-width: 90em;
-	height: auto;
-}
-
-.logo {
-	background: #FFFFFF;
-	opacity: 0.6;
-}
-
-/* Typography
-====================*/
-h1{
-	font-weught: 300;
-	font-size: 1.7rem;
-	margin-top: 0;
-}
-
-p {
-	margin-top: 0;
-	line-height: 1.25;
-}
-
-p:last-of-type {
-	margin-bottom: 0;
-}
-
-.title {
-	font-size: 2.5rem;
-	margin-bottom: 1.5em;
-	font-weight: 900;
-	margin-top: 1em;
-}
-
-.title span {
-	font-weight: 300;
-	display: block;
-	font-size: .4em;
-	/* color: #FFF; */
-}
-
-@media (min-width:60rem){
-	p {
-		font-size: 1.2rem;
-		line-height: 1.2;
-	}
+<div class="container">
+<section class="home-about">
+	<div class="home-about-textbox">
+		<h1>Quienes somos </h1>
+		<p> Este es un proyecto de investigación orientado a implementar algoritmos de detección de daños por medio de sensores de observación de la Tierra, tales como acelerometros, tide-gauges, e imágenes satelitales. El proyecto es financiado por el Fondecyt mediante el contrato No. 038-2019.</p>
+		<p>La novedad del sistema que se plantea implementar emplea procedimientos no-convencionales para la calibración de funciones discriminantes para la detección de daños ocurridos en un desastre.</p>
+	</div>
 	
-	.title{
-		font-size: 3,7rem;
-	}
-
-}
-
-/* Buttons */
-.button {
-	display: inline-block;
-	font-size: 1.5rem;
-	text-decoration: none;
-	text-transform: uppercase;
-	border-width: 2px;
-	border-style: solid;
-	padding: .5em 1.5em;
-}
-
-@media (min-width: 60rem){
-	.button{
-		font-size: 1.5rem;
-	}
-}
-
-.button-small {
-	font-size: .7rem;
-	font-weight: 700;
-}
-
-.button-accent {
-	color: #00ff6c;
-	border-color: #00ff6c;
-}
-
-.button-accent:hover,
-.button-accent:focus{
-	background: #00ff6c;
-	color: #232323;
-}
-
-
-
-
-/* Header
-====================*/
-
-header {
-	position: absolute; 
-	left: 0;
-	right: 0;
-	margin: 1em;
-
-}
-
-
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-
-nav li {
-	display: inline-block;
-	margin: 1em;
-}
-
-nav a {
-	font-weight: 900;
-	text-decoration: none;
-	text-transform: .8rem;
-	padding: .5em;
-	color: #FFF;
-}
-
-nav a:hover,
-nav a:focus {
-	color: #DDD;
-}
-
-@media (min-width:60rem){
-	.logo{
-		float:left;
-	}
-	
-	nav{
-		float:right;
-	}
-
-}
-
-
-/* Home hero
-====================*/
-.home-hero {
-	background-image: url(../img/SAR.jpeg);
-	background-size: cover;
-	background-position: center;
-	padding: 10em 0;
-	color: #FFF;
-}
-
-@media (min-width: 60rem){
-	.home-hero{
-		height: 100vh;
-		padding-top: 35vh;
-	}
-}
-
-
-/* Hero home
-====================*/
-
-.home-about-textbox{
-	background-color: #232323;
-	padding: 3em;
-	width: 100vw;
-	/*margin-left: -2.5%; */
-	outline: 2px solid #00ff6c;
-	outline-offset: -2.5em;
-	color: #FFF;
-	position: relative;
-	
-}
-
-.home-about-textbox h1{
-	color: #00ff6c;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	top: 0.75em;
-	background: #232323;
-	padding: 0 .25em;
-}
-
-@media (min-width: 25rem){
-	h1{
-		font-size: 2rem;
-	}
-	
-	.home-about-textbox h1{
-		top: .6em;
-		padding: 0 .25em;
-	}
-}
-
-@media (min-width: 60rem){
-	h1{
-		font-size: 2.0rem;
-	}
-	
-	.home-about {
-		background-image: url(../img/homeAbout.jpg);
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		padding-bottom: 10em;
-	}
-	
-	.home-about-textbox {
-		width: 50%;
-		padding: 5em;
-		outline-offset: -3.5em;
-		margin-left: -2.5%;
-		top: -5em;
-		text-align: left;
-		box-shadow: 0 0 4em 0 rgba(0,0,0,.5);
-	}
-	
-	
-	.home-about-textbox h1{
-		top: .85em;
-		left: 4.5rem;
-		transform: translateX(0);
-	}
-}
-
-
-/* Portfolio */
-.portfolio {
-	margin: 3em 0;
-}
-
-.port-item {
-	margin: 0;
-	position: relative;
-}
-
-.port-item img {
-	display: block;
-}
-
-.port-desc {
-	position: absolute;
-	z-index: 100;
-	bottom: 0em;
-	left: 0em;
-	right: 0em;
-	color: white;
-	background: rgb(0,0,0,.6);
-	padding-bottom: 1em;
-}
-
-.port-desc p {
-	margin: 1em;
-}
-
-@media (min-width: 37rem) {
-	.port-item {
-		width: 50%;
-		float: left;
-	}
-}
-
-@media (min-width: 60rem) {
-	.port-item {
-		width: 33.3333334%;
-		overflow: hidden;
-	}
-	
-	.port-desc {
-		transform: translateY(150%);
-	}
-	
-	.port-item:hover .port-desc {
-		transform: translateY(0%);
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</section>
+</div>
+
+<section>
+<h1> Equipo de Investigación </h1>
+<h2>Investigador Principal: Luis Moya</h2>
+<p>Obtuvo su bachillerato en ingeniería civil y una maestria en ciencias con mención en estructuras en la Universidad Nacional de Ingeniería. Completo el curso de doctorado en el Departamento de Sistemas de Entornos Urbanos en la Universidad de Chiba, Japón. Se ha desempeñado como investigador en el Instituto Internacional de Investigación de Ciencias de los Desastres (IRIDeS), Universidad de Tohoku, Japon. Actualmente se desempeña como el Investigador Principal del proyecto, e Investigador Visitante en IRIDeS. Entre sus intereses destacan el uso de imágenes satelitales para la identificación de daños, machine learning, reinforcement learning, sistemas inteligentes de evacuación, e ingeniería sísmica.</p>
+
+<h2>Investigador Asociado: Carlos Gonzales</h2>
+<p>Obtuvo su bachillerato en ingeniería civil en la Universidad Nacional de Ingeniería. Obtuvo el grado de master y doctor en la Universidad de Chiba, Japon. Le gusta la bateria. </p>
+
+<h2>Coinvestigador: Miguel Diaz</h2>
+<p>Profesor Asociado en la Universidad Nacional de Ingeniería, Lima, Perú. Recibió el grado de bachiller en Ingeniería Civil el 2006 y el título de Ingeniero Civil en el 2010 en la Universidad Nacional de Ingeniería. Obtuvo el grado Maestría en el GRIPS y BRI, Japón, el 2008; y el grado de Doctor en Ingeniería en la Universidad Nacional de Yokohama, Japón, el 2013. Su investigación está relacionada con ensayos en elementos y sistemas estructurales de edificaciones, desarrollo modelos analíticos y numéricos. Colabora con otros investigadores del CISMID en la estimación de riesgo de pérdidas por terremotos en viviendas de distritos del Perú. Actualmente, trabaja con otros investigadores en el Monitoreo de la Salud Estructural de Edificios en Lima con el objetivo de desarrollar herramientas para determinar la respuesta sísmica de las estructuras y el nivel de daño en tiempo real. Desde el 2019, ocupa el cargo de Director de investigación del CISMID.</p>
+
+<h2>Coinvestigador: Bruno Adriano</h2>
+<p>Aqui poner algo</p>
+
+<h2>Coinvestigador: Erick Mas</h2>
+<p>Erick Mas es ingeniero civil de la Universidad Nacional de Ingenieria (UNI), con maestria en Gestion del Riesgo de Desastres en la UNI y doctorado en Ingeniería de Tsunamis en la Universidad de Tohoku en Japon.
+Actualmente es Profesor Asociado en la Universidad de Tohoku en Sendai; ciudad donde ocurrió el terremoto y tsunami del 11 de Marzo de 2011.
+El Dr. Mas es el unico latinoamericano que forma parte del grupo de expertos en tsunamis del Colegio de Ingenieros en Japón y labora para el 
+Instituto Internacional de Investigación en la Ciencia de los Desastres (IRIDeS), en la Facultad de Ingeniería Civil y en el Centro de Investigación de Ciberfísica Resiliente e Inteligencia Artificial (TCPAI) de la Universidad de Tohoku. Entre los temas de interes en su investigacion estan la simulacion de tsunami, simulaciones multiagente, sensores remotos y aplicaciones de drones en la mitigacion de desastres.</p>
+
+<h2>Coinvestigador: Shunichi Koshimura</h2>
+<p>Recibió el grado de Doctor en la escuela de ingeniería de la Universidad de Tohoku. Trabajó como investigador especial del Instituto Japonés para la Promoción de la Ciencia en el Instituto de Investigación de Terremotos, Universidad de Tokyo, Japón. Fue Investigador Visitante en la agencia de Administración Nacional Oceánica y Atmosférica, Estados Unidos. Fue Investigador en el Instituto de Reducción de Desastres y Renovación Humana. </p>
+
+<h2>Coinvestigador: Fumio Yamazaki</h2>
+<p>Aqui poner algo</p>
+
+<h2>Coinvestigador: Carlos Zavala</h2>
+<p>Doctor en Ingenieria Graduado en la Universidad de Tokyo Japón. Master en Ciencias con mención en Ingenieria Estructural FIC-UNI. Ingeniero Civil Falcultad de Ingenieria Civil Universidad Nacional de Ingenieria UNI. Ex. Director del CISMID-FIC- UNI (1999-2001) (2007-2012). Jefe del Instituo de Investigación FIC-UNI (2003-2004). Campos de Interes: - Materiales de Construcción - Ensayos con Sismos en Estructuras a escala real. - Redes Neuronales aplicadas a la Ingenieria Civil. - Dispositivos de Disipación de Energia</p>
+
+
+</section>
+
+<section class="portfolio">
+<h1>Some of our work </h1>
+
+<!--Portfolio item 1 -->
+<figure class="port-item">
+	<img src="img/StrongMotionInterpolation.jpg" alt="portfolio-item">
+	<figcaption class="port-desc">
+	<p>Mapa de Intensidades Sísmicas</p>
+	<a href="" class="button button-accent button-small">Project details </a>
+	</figcaption>
+</figure>
+
+<!--Portfolio item 2 -->
+<figure class="port-item">
+	<img src="img/Tiles.png" alt="portfolio-item">
+	<figcaption class="port-desc">
+	<p>Imágenes Satelitales</p>
+	<a href="" class="button button-accent button-small">Project details </a>
+	</figcaption>
+</figure>
+
+<!--Portfolio item 3 -->
+<figure class="port-item">
+	<img src="img/LCLU.png" alt="portfolio-item">
+	<figcaption class="port-desc">
+	<p>Project title</p>
+	<a href="" class="button button-accent button-small">Project details </a>
+	</figcaption>
+</figure>
+
+<!--Portfolio item 4 -->
+<figure class="port-item">
+	<img src="img/FlowchartProject.png" alt="portfolio-item">
+	<figcaption class="port-desc">
+	<p>Project title</p>
+	<a href="" class="button button-accent button-small">Project details </a>
+	</figcaption>
+</figure>
+
+<!--Portfolio item 5 -->
+<figure class="port-item">
+	<img src="img/Lettering-PROYECTO.png" alt="portfolio-item">
+	<figcaption class="port-desc">
+	<p>Project title</p>
+	<a href="" class="button button-accent button-small">Project details </a>
+	</figcaption>
+</figure>
+
+<!--Portfolio item 6 -->
+<figure class="port-item">
+	<img src="img/Lettering-PROYECTO.png" alt="portfolio-item">
+	<figcaption class="port-desc">
+	<p>Project title</p>
+	<a href="" class="button button-accent button-small">Project details </a>
+	</figcaption>
+</figure>
+
+</section>
+
+<footer>
+<div class="col-3">
+<p>Hola estoy probando el footer</p>
+</div>
+
+<div class="col-1">
+<ul class="unstyled-list">
+	<li>item 1 </li>
+	<li>item 1 </li>
+	<li>item 1 </li>
+	<li>item 1 </li>
+</ul>
+</div>
+
+<div class="col-1">
+<ul class="unstyled-list">
+	<li>item 1 </li>
+	<li>item 1 </li>
+	<li>item 1 </li>
+	<li>item 1 </li>
+</ul>
+</div>
+
+<div class="col-1">
+<ul class="unstyled-list">
+	<li>item 1 </li>
+	<li>item 1 </li>
+	<li>item 1 </li>
+	<li>item 1 </li>
+</ul>
+</div>
+
+</footer>
+
+</body>
+
+</html>
