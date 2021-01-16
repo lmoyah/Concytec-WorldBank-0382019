@@ -23,9 +23,31 @@ img{
 	height: auto;
 }
 
+.clearfix::after,
+section::after,
+footer::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+
 .logo {
 	background: #FFFFFF;
 	opacity: 0.6;
+}
+
+/* Column system
+====================*/
+[class^=col-] {
+	float: left;
+}
+
+.col-3 {
+	width: 50%;
+}
+
+.col-1 {
+	width: 16.6666%;
 }
 
 /* Typography
@@ -57,6 +79,12 @@ p:last-of-type {
 	display: block;
 	font-size: .4em;
 	/* color: #FFF; */
+}
+
+.unstyled-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 @media (min-width:60rem){
@@ -294,7 +322,21 @@ nav a:focus {
 }
 
 
+/* Footer */
+/*---------------------------*/
+footer {
+	background: #232323;
+	color: #fff;
+	text-align: left;
+}
 
+/* Team */
+/*---------------------------*/
+
+.team {
+	background: #B0C0B3;
+	text-align: left;
+}
 
 
 
