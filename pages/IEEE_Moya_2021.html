@@ -10,33 +10,34 @@
 	</head>
 		
 	<body>
-	<h1>Disaster-based sampling selection </h1>
+	<h1>Nueva Metodología Para la Identificación de Viviendas Dañadas</h1>
 	
-
+<div class="highlight">
+<section>
+		<h3>Puntos resaltantes</h3>
 		<ul>
-		  <li><strong>Puntos resaltantes</strong></li>
 		  <li>Se propone un nuevo esquema para recolectar data de entrenamiento in cuasi-tiempo real para detección de viviendas dañadas por desastres de gran escala.</li>
 		  <li>La metodologia fusiona información de imágenes satelitales, sensores no-remotos, y modelos numéricos.</li>
 		  <li>La recolección automática de datos de entrenamiento considera el nivel de la intensidad del desastre</li>
 		</ul> 
-	
-<!-- 
-		<ul class="mdc-list">
-		  <li class="mdc-list-item" tabindex="0">
-			<span class="mdc-list-item__ripple"></span>
-			<span class="mdc-list-item__text">Single-line item</span>
-		  </li>
-		  <li class="mdc-list-item">
-			<span class="mdc-list-item__ripple"></span>
-			<span class="mdc-list-item__text">Single-line item</span>
-		  </li>
-		  <li class="mdc-list-item">
-			<span class="mdc-list-item__ripple"></span>
-			<span class="mdc-list-item__text">Single-line item</span>
-		  </li>
-		</ul>
- -->
 		
+		<h3>Detalles de publicación</h3>
+		<ul>
+		  <li>Titulo: Disaster Intensity-Based Selection of Training Samples for Remote Sensing Building Damage Classification</li>
+		  <li>Autores: Luis Moya, Christian Geiss, Masakazu Hashimoto, Erick Mas, Shunichi Koshimura, Guenter Strunz</li>
+		  <li>Revista cientifica: IEEE Transactions on Geoscience and Remote Sensing</li>
+		  <li>DOI: 10.1109/TGRS.2020.3046004</li>
+		  <li>URL: <a href="https://ieeexplore.ieee.org/document/9321713">https://ieeexplore.ieee.org/document/9321713</a></li>
+		</ul> 
+		
+</section>
+</div>
+
+
+<div class="team" id="team">
+<section>
+
+		<h3>Resumen</h3>
 		<div>
 		<p>En muchos casos, los datos de entrenamiento, considerada como la columna vertebral de todo proyecto de machine learning, son difíciles de obtener. En consecuencia, representa también el cuello de botella de sistemas/aplicaciones basados en machine learning. Tal es el caso del objetivo de identificar las viviendas dañadas debido a desastres productos de fenómenos naturales, tales como terremotos, tsunamis y huaicos. Ante la ocurrencia de un desastre, recolectar datos en el área afectada es casi imposible. Las carreteras están bloqueadas, las áreas aun representan una amenaza para realizar levantamientos de campo, y la prioridad en las primeras horas son actividades de primeros auxilios.</p>
 		
@@ -44,16 +45,22 @@
 		
 		<p>Un investigador del Centro Peruano-Japonés de Investigaciones Sísmicas y Mitigación de Desastres (CISMID) de la Universidad Nacional de Ingeniería, en colaboración con investigadores del Centro Alemán de Datos de Teledetección de la Centro Aeroespacial Alemán, y del Instituto Internacional de Investigación de Ciencias de Desastres de la Universidad de Tohoku, proponen concentrarse solo en la recolección de datos de entrenamiento del desastre en cuestión. Para esto, proponen un procedimiento automático para la recolección parcial de datos. Además, se proponen esquemas para calibrar un algoritmo de machine learning para identificar las viviendas dañadas.
 		</p>
+		
+		<p>
+		La metodología propone no solo información de sensores remotos, sino también información de otros tipos de sensores y modelos numéricos de los fenómenos naturales. Se define a un mapa de intensidades a aquel mapa que cuantifica el nivel de severidad con que se sintió el desastre. Por ejemplo, el nivel máximo de aceleración puedes usarse como un mapa de intensidades, o la altura de inundación para el caso de tsunamis. Resulta, en muchos desastres típicos, el mapa de intensidades puede estimarse en tiempo real mediante modelos numéricos calibrados con ciertos sensores. Dicha disponibilidad puede explotarse para recolectar datas de entrenamientos en zonas de baja intensidad y asumir que se trata de muestras de viviendas no dañadas. Un algoritmo de machine learning puede aprender de ciertos patrones de viviendas no-dañadas en dichas áreas. Luego, el algoritmo identificaría distintos patrones en áreas cuya intensidad de desastre sea intermedia/alta.
+		</p>
 		</div>
 		
-	
+</section>
+</div>
+
 <!-- 	<img src="https://drive.google.com/uc?id=1IQO3NHVp_3M0BGZc9ujSf7eRb9f0I8jf" alt="Scheme" width="500"> -->
 	<!-- <img src="https://drive.google.com/file/d/1IQO3NHVp_3M0BGZc9ujSf7eRb9f0I8jf/view?usp=sharing"> -->
 	
 	<figure>
-	<img src="https://drive.google.com/uc?id=1IQO3NHVp_3M0BGZc9ujSf7eRb9f0I8jf" alt="Scheme" width="700">
+	<img src="https://drive.google.com/uc?id=1IQO3NHVp_3M0BGZc9ujSf7eRb9f0I8jf" alt="Scheme" width="800">
 	<figcaption >
-	<p>Mapa de Intensidades Sísmicas</p>
+	<p> </p>
 	</figcaption>
 	</figure>
 
@@ -66,6 +73,42 @@
 	</button>
 	</a>
 
+	<footer>
+<!-- <p><strong>Organizaciones financieras y grupos de investigación:</strong></p> -->
+
+<div class="container">
+
+<div class="col-3">
+<img src="../img/5. Logo-BancoMundial.png" alt="LogoWorldBank" width="300">
+</div>
+
+<div class="col-3">
+<img src="../img/4. Logo Concytec - Fondecyt .png" alt="LogoFondecyt" width="300"> 
+</div>
+
+<div class="col-1">
+<img src="../img/LogoUNI.png" alt="LogoUNI" width="90">
+</div>
+
+<div class="col-1">
+<img src="../img/logo_cismid.png" alt="LogoCismid" width="110">
+</div>
+
+<div class="col-1">
+<img src="../img/Logo_Tohoku.png" alt="LogoTohoku" width="70">
+</div>
+
+<div class="col-1">
+<img src="../img/logo_IRIDeS.png" alt="LogoIRIDeS" width="70">
+</div>
+
+<div class="col-1">
+<img src="../img/logo_AIP.png" alt="LogoAIP" width="125">
+</div>
+
+<div class="col-1">
+<img src="../img/LogoNied.png" alt="LogoNIED" width="90">
+</div>
 
 	</body>
 </html>
