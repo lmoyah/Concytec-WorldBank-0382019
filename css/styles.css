@@ -40,17 +40,16 @@ footer::after{
 ====================*/
 [class^=col-] {
 	float: left;
-	vertical-align: middle;
 }
 
 .col-3 {
-	width: 24%;
-	vertical-align: middle;
+	width: 20%;
+	vertical-align: center;
 }
 
 .col-1 {
-	width: 8%;
-	vertical-align: middle;
+	width: 10%;
+	vertical-align: center;
 }
 
 /* Typography
