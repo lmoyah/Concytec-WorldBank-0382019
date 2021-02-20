@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Luis Moya</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>FBM038-2019</title>
+ <link rel="icon" type="image/png" href="img/LogoUNI.png"/>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
 <style>
@@ -11,6 +12,7 @@ h1 {
   text-align: center;
 }
 </style>
+
 
 </head>
 
@@ -24,6 +26,7 @@ h1 {
 		<li><a href="#about">Quienes somos</a> </li>
 		<li><a href="#team">Equipo</a> </li>
 		<li><a href="">Contacto</a> </li>
+		<li><a href="#publicaciones">Publicaciones</a></li>
 	</ul>
 </nav>
 </header>
@@ -89,7 +92,7 @@ Instituto Internacional de Investigación en la Ciencia de los Desastres (IRIDeS
 	<img src="pages/img/IEEE_scheme.png" alt="portfolio-item">
 	<figcaption class="port-desc">
 	<p>Nueva metodología para la detección de viviendas dañadas</p>
-	<a href="pages/IEEE_Moya_2021.html" class="button button-accent button-small">Detalles</a>
+	<a href="pages/IEEE_Moya_2021.html" target="_blank" class="button button-accent button-small">Detalles</a>
 	</figcaption>
 </figure>
 
@@ -133,7 +136,59 @@ Instituto Internacional de Investigación en la Ciencia de los Desastres (IRIDeS
 
 </section>
 
+<section id="publicaciones">
+<h1>Publicaciones</h1>
+<h2>Revistas científicas</h2>
+
+<details>
+<summary>L. Moya, C. Geiß, M. Hashimoto, E. Mas, S. Koshimura and G. Strunz, "Disaster Intensity-Based Selection of Training Samples for Remote Sensing Building Damage Classification," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2020.3046004</summary>
+<p>Previous applications of machine learning in remote sensing for the identification of damaged buildings in the aftermath of a large-scale disaster have been successful. However, standard methods do not consider the complexity and costs of compiling a training data set after a large-scale disaster. In this article, we study disaster events in which the intensity can be modeled via numerical simulation and/or instrumentation. For such cases, two fully automatic procedures for the detection of severely damaged buildings are introduced. The fundamental assumption is that samples that are located in areas with low disaster intensity mainly represent nondamaged buildings. Furthermore, areas with moderate to strong disaster intensities likely contain damaged and nondamaged buildings. Under this assumption, a procedure that is based on the automatic selection of training samples for learning and calibrating the standard support vector machine classifier is utilized. The second procedure is based on the use of two regularization parameters to define the support vectors. These frameworks avoid the collection of labeled building samples via field surveys and/or visual inspection of optical images, which requires a significant amount of time. The performance of the proposed method is evaluated via application to three real cases: the 2011 Tohoku-Oki earthquake-tsunami, the 2016 Kumamoto earthquake, and the 2018 Okayama floods. The resulted accuracy ranges between 0.85 and 0.89, and thus, it shows that the result can be used for the rapid allocation of affected buildings.
+<a href="https://ieeexplore.ieee.org/document/9321713" target="_blank">URL</a>
+</p>
+</details>
+
+<details>
+<summary>
+Moya, L.; Mas, E.; Koshimura, S. Learning from the 2018 Western Japan Heavy Rains to Detect Floods during the 2019 Hagibis Typhoon. Remote Sens. 2020, 12, 2244.</summary>
+<p>Applications of machine learning on remote sensing data appear to be endless. Its use in damage identification for early response in the aftermath of a large-scale disaster has a specific issue. The collection of training data right after a disaster is costly, time-consuming, and many times impossible. This study analyzes a possible solution to the referred issue: the collection of training data from past disaster events to calibrate a discriminant function. Then the identification of affected areas in a current disaster can be performed in near real-time. The performance of a supervised machine learning classifier to learn from training data collected from the 2018 heavy rainfall at Okayama Prefecture, Japan, and to identify floods due to the typhoon Hagibis on 12 October 2019 at eastern Japan is reported in this paper. The results show a moderate agreement with flood maps provided by local governments and public institutions, and support the assumption that previous disaster information can be used to identify a current disaster in near-real time.
+<a href="https://www.mdpi.com/2072-4292/12/14/2244" target="_blank">URL</a>
+</p>
+</details>
+
+<details>
+<summary>Mas, E., Paulik, R., Pakoksung, K., Adriano, B., Moya, L., Suppasri, A., Muhari, A., Khomarudin R., Yokoya, N, Matsuoka, M., and Koshimura, S. (2020) Characteristics of Tsunami Fragility Functions Developed Using Different Sources of Damage Data from the 2018 Sulawesi Earthquake and Tsunami. Pure Appl. Geophys.</summary>
+<p>We developed tsunami fragility functions using three sources of damage data from the 2018 Sulawesi tsunami at Palu Bay in Indonesia obtained from (i) field survey data (FS), (ii) a visual interpretation of optical satellite images (VI), and (iii) a machine learning and remote sensing approach utilized on multisensor and multitemporal satellite images (MLRS). Tsunami fragility functions are cumulative distribution functions that express the probability of a structure reaching or exceeding a particular damage state in response to a specific tsunami intensity measure, in this case obtained from the interpolation of multiple surveyed points of tsunami flow depth. We observed that the FS approach led to a more consistent function than that of the VI and MLRS methods. In particular, an initial damage probability observed at zero inundation depth in the latter two methods revealed the effects of misclassifications on tsunami fragility functions derived from VI data; however, it also highlighted the remarkable advantages of MLRS methods. The reasons and insights used to overcome such limitations are discussed together with the pros and cons of each method. The results show that the tsunami damage observed in the 2018 Sulawesi event in Indonesia, expressed in the fragility function developed herein, is similar in shape to the function developed after the 1993 Hokkaido Nansei-oki tsunami, albeit with a slightly lower damage probability between zero-to-five-meter inundation depths. On the other hand, in comparison with the fragility function developed after the 2004 Indian Ocean tsunami in Banda Aceh, the characteristics of Palu structures exhibit higher fragility in response to tsunamis. The two-meter inundation depth exhibited nearly 20% probability of damage in the case of Banda Aceh, while the probability of damage was close to 70% at the same depth in Palu.
+<a href="https://link.springer.com/article/10.1007/s00024-020-02501-4" target="_blank">URL</a>
+</p> 
+</details>
+
+<details>
+<summary>Koshimura, S., Moya, L., Mas, E., Bai, Y. (2020) Tsunami Damage Detection with Remote Sensing: A Review. Geosciences 10, 177.</summary>
+<p>Tsunamis are rare events compared with the other natural disasters, but once it happens, it can be extremely devastating to the coastal communities. Extensive inland penetration of tsunamis may cause the difficulties of understanding its impact in the aftermath of its generation. Therefore the social needs to technologies of detecting the wide impact of great tsunamis have been increased. Recent advances of remote sensing and technologies of image analysis meet the above needs and lead to more rapid and efficient understanding of tsunami affected areas. This paper provides a review of how remote sensing methods have developed to contribute to post-tsunami disaster response. The evaluations in the performances of the remote sensing methods are discussed according to the needs of tsunami disaster response with future perspective.
+<a href="https://www.mdpi.com/2076-3263/10/5/177" target="_blank">URL</a>
+</p>
+</details>
+
+<details>
+<summary>Moya, L., Muhari, A., Adriano, B., Koshimura, S., Mas, E., Marval-Perez, L. R., Yokoya, N. (2020) Detecting urban changes using phase correlation and ℓ1-based sparse model for early disaster response: A case study of the 2018 Sulawesi Indonesia earthquake-tsunami. Remote Sensing of Environment, Vol 242, 111743.</summary>
+<p>Change detection between images is a procedure used in many applications of remote sensing data. Among these applications, the identification of damaged infrastructures in urban areas due to a large-scale disaster is a task that is crucial for distributing relief, quantifying losses, and rescue purposes. A crucial consideration for change detection is that the images must be co-registered precisely to avoid errors resulting from misalignments. An essential consideration is that some large-magnitude earthquakes produce very complex distortions of the ground surface; therefore, a pair of images recorded before and after a particular earthquake cannot be co-registered accurately. In this study, we intend to identify changes between images that are not co-registered. The proposed procedure is based on the use of phase correlation, which shows different patterns in changed and non-changed areas. A careful study of the properties of phase correlation suggests that it is robust against misalignments between images. However, previous studies showed that, in areas with no-changes, the signal power in the phase correlation is not concentrated in a single component, but rather in several components. Thus, we study the performance of the ℓ1-regularized logistic regression classifier to identify the relevant components of phase correlation and learn to detect non-changed and changes areas. An empirical evaluation consisting of identifying the changes between pre-event and post-event images corresponding to the 2018 Sulawesi Indonesia earthquake-tsunami was performed for this purpose. Pairs of visible and near-infrared (VNIR) spectral bands of medium-resolution were used to compute the phase correlation to set feature space. The phase correlation-based feature space consisted of 484 features. We evaluate the proposed procedure using a damage inventory performed from visual inspection of optical images of 0.5-m resolution. A third-party provided the referred inventory. Because of the limitation of medium-resolution imagery, the different damage levels in the damage inventory were merged into a binary class: “changed” and “non-changed”. The results demonstrate that the proposed procedure efficiently reproduced 85 ± 6% of the damage inventory. Furthermore, our results identified tsunami-affected areas that were not previously identified by visual inspection.
+<a href="https://www.sciencedirect.com/science/article/pii/S0034425720301139" target="_blank">URL</a>
+</p>
+</details>
+
+	
+<h2>Conferencias</h2>
+	<ul>
+		<li>Moya, L. (2021) Análisis de datos para la ciencia de los desastres. Jornada Peruana-Internacional de Investigación en Ingeniería y Ciencias, Lima, Peru.</li>	
+		<li>Moya, L. (2020) Fully Automatic Machine Learning Classifiers for Remote Sensing Damage Classification. The 1st Renmin University of China (RUC) Workshop on AI for Social Good, China.</li>
+		<li>Moya, L., Mas, E., Koshimura, S., Yamazaki, F., Liu, W., and Geiß, C. (2020) Fusion of modeling and remote sensing for damage estimation. 17th World Conference of Earthquake Engineering, Japan, 9 pages.</li>
+		<li>Moya, L., Mas, E., and Koshimura, S. (2020) Phase correlation and sparse modeling for damage detection due to the 2018 Sulawesi earthquake-tsunami. 17th World Conference of Earthquake Engineering, Japan, 8 pages.</li>
+		<li>Mas, E., Moya, L., and Koshimura, S. (2020) Tsunami evacuation guidance using reinforcement learning algorithm. 17th World Conference of Earthquake Engineering, Japan, 11 pages.</li>
+	</ul>
+</section>
+
 <footer>
+<hr>
 <p><strong>Organizaciones financieras y grupos de investigación:</strong></p>
 
 <div class="container">
